@@ -1,70 +1,56 @@
 # 👋 Hi, I'm Abhighayn Bakshi
 
-**Systems Engineer** — LLM Integration · Networking & Cloud Infrastructure  
-📍 Sector 5, Kolkata, West Bengal, India
+**AI/ML Engineer** — Computer Vision · Backend & Cloud  
+📍 Kolkata, India · 🎓 B.Tech AI & ML (2023–2027) · 💼 SDE Intern @ BECS Electronics
 
 ---
 
 ## 🚀 About Me
 
-I'm a Systems Engineer passionate about building scalable, intelligent systems at the intersection of **LLM integration**, **cloud infrastructure**, and **network engineering**. I specialize in designing end-to-end solutions that bridge the gap between cutting-edge AI models and production-ready infrastructure.
+Final-year B.Tech (AI & ML) student building real-time computer vision pipelines and the backends that serve them. Shipped multi-stream YOLOv8 detection in production during a 6-month SDE internship; comfortable across FastAPI, PostgreSQL, Redis, Docker and AWS.
 
-- 🔧 **Currently building**: AI-powered surveillance systems, LLM-driven automation pipelines
-- ☁️ **Cloud focus**: AWS, container orchestration, infrastructure-as-code
-- 🌐 **Networking**: Distributed systems, low-latency architectures, protocol optimization
-- 🤖 **AI/ML**: LLM fine-tuning, RAG systems, computer vision, MLOps
-- 📚 **Always learning**: New frameworks, emerging protocols, system design patterns
+- 🎯 **Core focus**: Real-time CV (YOLO, tracking), backend engineering, cloud deployment
+- 🏭 **Production experience**: 12-camera unattended-object detection @ 92% precision, 70% latency reduction
+- ☁️ **Cloud/Infra**: AWS (EC2, S3, IAM), Docker, Nginx, Linux, CI/CD
+- 🤝 **Open to**: Full-time SDE roles (2027), computer vision, backend, infra positions
 
 ---
 
 ## 🛠️ Tech Stack
 
-### Languages
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-![Go](https://img.shields.io/badge/Go-00ADD8?style=for-the-badge&logo=go&logoColor=white)
-![Bash](https://img.shields.io/badge/Bash-4EAA25?style=for-the-badge&logo=gnu-bash&logoColor=white)
-
-### AI/ML & Data
-![PyTorch](https://img.shields.io/badge/PyTorch-EE4C2C?style=for-the-badge&logo=pytorch&logoColor=white)
-![TensorFlow](https://img.shields.io/badge/TensorFlow-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
-![Hugging Face](https://img.shields.io/badge/Hugging%20Face-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black)
-![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=for-the-badge&logo=opencv&logoColor=white)
-![Pandas](https://img.shields.io/badge/Pandas-150458?style=for-the-badge&logo=pandas&logoColor=white)
-
-### Cloud & Infrastructure
-![AWS](https://img.shields.io/badge/AWS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![Terraform](https://img.shields.io/badge/Terraform-7B42BC?style=for-the-badge&logo=terraform&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-
-### Tools & Platforms
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=github-actions&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-DC382D?style=for-the-badge&logo=redis&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+| Category | Technologies |
+|----------|--------------|
+| **Languages** | Python, Java, SQL |
+| **CV / ML** | PyTorch, Ultralytics YOLO, OpenCV, TensorRT, BoT-SORT, Flower (FL), scikit-learn, Hugging Face |
+| **Backend** | FastAPI, PostgreSQL, Redis, MinIO (S3), Celery |
+| **Cloud / Infra** | AWS (EC2, S3, IAM, CloudWatch), Docker, Linux, Nginx, Git |
+| **Networking** | TCP/IP, DNS, HTTP/S, subnetting, routing, firewalls |
 
 ---
 
 ## 📂 Featured Projects
 
-### 🎥 Smart Surveillance System
-**AI-powered video analytics platform** with real-time object detection, tracking, and alerting  
-`Python` `FastAPI` `YOLO` `OpenCV` `WebRTC` `PostgreSQL` `Redis`  
-[Repository](https://github.com/drakaris-ab/smart-surveillance-app) — Production-ready surveillance with multi-camera support
+### 🎥 [Smart Surveillance](https://github.com/drakaris-ab/smart-surveillance) ⭐ 1
+**Multi-camera video analytics platform** — FastAPI + React + WebRTC  
+Batched multi-stream inference on TensorRT FP16 (YOLOv11), shared decode layer, async event queue with WebSocket alerts. **8 streams @ 25 FPS on RTX 3080 (10GB)**.  
+`Python` `FastAPI` `YOLOv11` `TensorRT` `WebRTC` `React` `PostgreSQL` `Redis`
 
-### 🌐 WebHub Repository
-**Full-stack web development portfolio** showcasing modern frontend/backend patterns  
-`JavaScript` `HTML/CSS` `Node.js` `REST APIs`  
-[Repository](https://github.com/drakaris-ab/webhub-repository)
+### ☁️ [CloudVault](https://github.com/drakaris-ab/cloudVault)
+**Distributed file storage** — FastAPI + MinIO + PostgreSQL  
+SHA-256 content-addressed chunks for block-level deduplication, resumable multipart uploads via presigned URLs, JWT auth with RBAC, Celery workers for thumbnailing/versioning. **38% storage saved / 142 MB/s upload**.  
+`Python` `FastAPI` `MinIO` `PostgreSQL` `Redis` `Celery` `Docker` `AWS`
 
-### 📄 HTML Resume Project
-**Interactive resume built purely with HTML/CSS** — zero frameworks  
-`HTML5` `CSS3` `Vanilla JS`  
-[Repository](https://github.com/drakaris-ab/myresume)
+### 🛡️ [FL-NIDS](https://github.com/drakaris-ab/FL-NIDS) ⭐ 1
+**Federated network intrusion detection** — PyTorch + Flower  
+FedProx for non-IID data, focal loss for class imbalance, DP-SGD + secure aggregation. **0.91 macro-F1** (vs 0.94 centralized), **80% recall** on rare DoS/port-scan/bruteforce.  
+`Python` `PyTorch` `Flower` `FedProx` `Focal Loss` `CICIDS2017` `DP-SGD`
+
+---
+
+## 🏆 Achievements
+
+- 🥇 **IncubES 2025 National Startup Summit** — Pitched *HerShield* (women's safety platform with real-time SOS, location sharing, responder network) to 6 investors
+- 🏆 **Smart India Hackathon** — College-level finalist (2024, 2025)
 
 ---
 
@@ -76,23 +62,17 @@ I'm a Systems Engineer passionate about building scalable, intelligent systems a
 
 ---
 
-## 📈 Contribution Graph
-
-![Contribution Graph](https://github-readme-activity-graph.vercel.app/graph?username=drakaris-ab&theme=tokyonight&hide_border=true)
-
----
-
 ## 🤝 Let's Connect
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhighayn-bakshi)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white)](https://linkedin.com/in/abhighayn-bakshi-01094a201)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)](https://github.com/drakaris-ab)
-[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhighayn.bakshi@gmail.com)
+[![Email](https://img.shields.io/badge/Email-D14836?style=for-the-badge&logo=gmail&logoColor=white)](mailto:abhighaynbakshi@gmail.com)
 
 ---
 
-> *"Building systems that think, networks that scale, and infrastructure that lasts."*
+> *"Building real-time vision systems and the backends that serve them."*
 
 ---
 
 ⭐ **Star my repositories if you find them useful!**  
-📫 **Open to collaborations, freelance work, and interesting challenges**
+📫 **Open to full-time SDE roles (2027), internships, and collaborations**
